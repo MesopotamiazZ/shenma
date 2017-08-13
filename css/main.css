@@ -1,0 +1,296 @@
+/** 公共样式 **/
+body{
+  font-family: "Microsoft YaHei","微软雅黑","Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-size: 62.5%; /** 10px **/
+}
+
+/** 头部 **/
+#header{
+  background: #f0f0f0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/** 如果屏幕大于840px才设置header的高度，小于让图片撑开 **/
+@media (min-width: 840px) {
+  #header{
+    height: 350px;
+  }
+}
+/** 设置img banner的宽度100% **/
+#header > img{
+  width: 100%;
+}
+
+/** 业务范围 **/
+#business{
+  // height: 350px;
+  background: #fff;
+  padding: 35px 25px 20px;
+}
+/** 公用样式划线 **/
+.line{
+  flex: 1;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  border-bottom: 0.5px solid #d4d8dc;
+}
+.container > .title{
+  text-align: center;
+  margin-bottom: 35px;
+}
+.container > .title > .title-top{
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.container > .title > .title-center{
+  font-size: 0;
+  margin-bottom: 5px;
+  // position: relative;
+  display: flex;
+}
+.container > .title > .title-center > span{
+  flex: 0 0 75px;
+  width: 75px;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(243, 115, 74);
+  margin: 0 5px;
+  white-space: nowrap;
+}
+.container > .title > .title-bottom{
+  height: 40px;
+  padding: 20px 0 0;
+  // max-width: 400px;
+  // margin: 0 auto;
+  font-size: 1.4rem;
+  color: #8b949d;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  // border-top: 0.5px solid #d4d8dc;
+}
+#business > .container > .b-content{
+  text-align: center;
+  // width: 800px;
+  margin: 0 auto;
+}
+#business > .container > .b-content > .function{
+  height: 113px;
+  // width: 170px;
+  position: relative;
+  margin-bottom: 10px;
+}
+#business > .container > .b-content > .function > .pic > img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+#business > .container > .b-content > .function > .cn{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+}
+#business > .container > .b-content > .function > .en{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #8b949d;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container > .b-btn{
+  margin-top: 17px;
+}
+.container > .b-btn > .button{
+  margin: 0 auto;
+  width: 135px;
+  height: 37px;
+  line-height: 37px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #2579bc;
+  background: #368cd2;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.container > .b-btn > .button:hover{
+  background: #2579bc;
+  box-shadow: none;
+}
+
+
+/** 办理步骤 **/
+#handle{
+  // height: 200px;
+  background: #fff;
+  padding: 35px 25px 20px;
+}
+#handle > .container > .h-content{
+  text-align: center;
+}
+#handle > .container > .h-content > .outerCircle{
+  margin-bottom: 40px;
+  position: relative;
+}
+#handle > .container > .h-content > .outerCircle > img{
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(1):before{
+  content: url(../images/innerCircle1.jpg);
+  max-width: 25px;
+  max-height: 25px;
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  margin-left: -12.5px;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(1):after{
+  content: '需求沟通';
+  white-space: nowrap;
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #58a6eb;
+  right: 50%;
+  bottom: 35%;
+  margin-right: -28px;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(2):before{
+  content: url(../images/innerCircle2.jpg);
+  max-width: 25px;
+  max-height: 25px;
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  margin-left: -12.5px;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(2):after{
+  content: '签订合同';
+  white-space: nowrap;
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #58a6eb;
+  right: 50%;
+  bottom: 35%;
+  margin-right: -28px;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(3):before{
+  content: url(../images/innerCircle3.jpg);
+  max-width: 25px;
+  max-height: 25px;
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  margin-left: -12.5px;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(3):after{
+  content: '项目进行';
+  white-space: nowrap;
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #58a6eb;
+  right: 50%;
+  bottom: 35%;
+  margin-right: -28px;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(4):before{
+  content: url(../images/innerCircle4.jpg);
+  max-width: 25px;
+  max-height: 25px;
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+  margin-left: -12.5px;
+}
+#handle > .container > .h-content > .outerCircle:nth-child(4):after{
+  content: '成功办理';
+  white-space: nowrap;
+  width: 56px;
+  height: 20px;
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #58a6eb;
+  right: 50%;
+  bottom: 35%;
+  margin-right: -28px;
+}
+
+
+/** 关于我们 **/
+#aboutUs{
+  background: #fff;
+  padding: 35px 25px 20px;
+  margin-bottom: 10px;
+}
+#aboutUs > .container > .a-content{
+  text-align: center;
+}
+#aboutUs > .container > .a-content > .frame{
+  padding: 20px 0 0;
+}
+#aboutUs > .container > .a-content > .frame > .pic{
+  margin-bottom: 15px;
+}
+#aboutUs > .container > .a-content > .frame > .pic > img{
+  width: 220px;
+  height: 220px;
+}
+@media (max-width: 768px) {
+  #aboutUs > .container > .a-content > .frame > .pic > img{
+    width: 125px;
+    height: 125px;
+  }
+}
+#aboutUs > .container > .a-content > .frame > .desc{
+  font-size: 1.5rem;
+}
+
+#top{
+  margin-bottom: 15px;
+}
+#top > .outerBtn{
+  margin: 0 auto;
+  width: 130px;
+  height: 30px;
+  background: #55a1df;
+  border-radius: 15px;
+  position: relative;
+}
+#top > .outerBtn > .innerBtn{
+  width: 126px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  background: #368cd2;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
